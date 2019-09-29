@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import './Navbar.css';
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,10 +19,10 @@ export function Navbar() {
           </button>
         </div>
       </div>
-        <div className={`sm:flex sm:p-0 sm:block ${isOpen ? 'block' : 'hidden'}`}>
-          <a href="#" className="block px-2 py-2 text-white font-semibold rounded hover:bg-gray-600">Dashboard</a>
-          <a href="#" className="block px-2 py-2 text-white font-semibold rounded hover:bg-gray-600">Contact Us</a>
-        </div>
+      <div className={`sm:flex sm:p-0 sm:block nav__links ${isOpen ? 'expand' : 'collapse'}`}>
+        <a href="#dash" className="block px-2 py-2 text-white font-semibold rounded hover:bg-gray-600">Dashboard</a>
+        <a href="#contact" className="block px-2 py-2 text-white font-semibold rounded hover:bg-gray-600">Contact Us</a>
+      </div>
     </header>
-    )
+  );
 }

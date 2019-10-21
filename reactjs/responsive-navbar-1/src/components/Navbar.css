@@ -1,5 +1,5 @@
 .nav__links {
-  transition: max-height 0.3s linear;
+  transition: max-height 0.2s linear;
 }
 
 .nav__links.expand {

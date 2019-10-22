@@ -1,0 +1,12 @@
+.nav__links {
+  transition: max-height 0.2s linear;
+  overflow: hidden;
+}
+
+.nav__links.expand {
+  max-height: 200px;
+}
+
+.nav__links.collapse {
+  max-height: 0px;
+}

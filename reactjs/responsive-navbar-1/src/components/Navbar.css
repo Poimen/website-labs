@@ -1,5 +1,6 @@
 .nav__links {
   transition: max-height 0.2s linear;
+  overflow: hidden;
 }
 
 .nav__links.expand {
@@ -8,5 +9,4 @@
 
 .nav__links.collapse {
   max-height: 0px;
-  overflow: hidden;
 }

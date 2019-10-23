@@ -19,8 +19,7 @@ export function Home() {
     <React.Fragment>
       <MenuToggleButton click={toggleDrawer}></MenuToggleButton>
       {backdrop}
-      {/* <Backdrop></Backdrop> */}
-      {/* <Sidebar></Sidebar> */}
+      <Sidebar></Sidebar>
       <Sidedraw show={isOpen}></Sidedraw>
       <div className="px-4 md:ml-64 ml-0">
         <div className="max-w-3xl bg-white rounded-lg mx-auto my-0 p-12 md:my-16">

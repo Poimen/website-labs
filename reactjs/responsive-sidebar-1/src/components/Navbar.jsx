@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Navbar.css';
 
-const ButtonNav = ({children}) => (
+const ButtonNav = ({ children }) => (
   <button className="py-4 px-0 block border-b-2 border-transparent hover:text-indigo-400 hover:border-indigo-700 md:p-4 uppercase tracking-wide">
     {children}
   </button>
@@ -27,7 +27,7 @@ export function Navbar() {
         <div>
           <button onClick={() => setIsOpen(!isOpen)} type="button" className="block text-gray-700 hover:text-gray-900 focus:outline-none md:hidden">
             <svg className="h-8 w-8 fill-current" viewBox="0 0 24 24">
-              {isOpen  ? <path fillRule="evenodd" d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z" /> : null}
+              {isOpen ? <path fillRule="evenodd" d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z" /> : null}
               {!isOpen ? <path fillRule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z" /> : null}
             </svg>
           </button>

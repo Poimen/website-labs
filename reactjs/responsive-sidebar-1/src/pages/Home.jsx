@@ -20,7 +20,7 @@ export function Home() {
       <MenuToggleButton click={toggleDrawer}></MenuToggleButton>
       {backdrop}
       <Sidebar></Sidebar>
-      <Sidedraw show={isOpen}></Sidedraw>
+      <Sidedraw show={isOpen} click={closeDrawer}></Sidedraw>
       <div className="px-4 md:ml-64 ml-0">
         <div className="max-w-3xl bg-white rounded-lg mx-auto my-0 p-12 md:my-16">
           <h1 className="text-2xl font-medium">Responsive Sidebar #1</h1>
